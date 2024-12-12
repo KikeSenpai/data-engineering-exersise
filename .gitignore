@@ -28,6 +28,9 @@ MANIFEST
 *.ipynb
 spark-warehouse/
 .DS_Store
+data/bronze/recipes
+data/silver/recipes
+data/output/*.*
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
