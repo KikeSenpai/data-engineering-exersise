@@ -6,11 +6,6 @@ Events are ingested from a Kafka cluster and stored in our Data Lake on S3.
 Events are sorted by arriving date. For example `events/recipe_changes/2019/11/29`.
 During events processing we heavily rely on execution day to make sure we pick proper chunks of data and keep historical results.
 We use Apache Spark to work with data and store it on S3 in parquet format. Our primary programming language is Python.
-
-## Excercise Overview
-
-At HelloFresh we have a big recipes archive that has been created over the last 8 years.
-It is constantly being updated either by adding new recipes or by making changes to existing ones.
 We have a service that can ingest data in JSON format to a selected S3 location.
 We are interested in tracking changes to see available recipes, their cooking time and difficulty level.
 
